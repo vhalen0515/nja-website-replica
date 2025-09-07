@@ -1,9 +1,17 @@
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import headerLogo from "../../assets/images/logo.svg";
 
 import "./Header.css";
 
 export default function Header({ menuOpen, setMenuOpen }) {
+    const location = useLocation();
+
+    // Closes menu after navigating to new link
+    useEffect(() => {
+        setMenuOpen(false)
+    }, [location, setMenuOpen])
+
     const toggleMenu = () => setMenuOpen((prev) => !prev);
 
     // Closes menu on window resize above 767px
@@ -33,9 +41,9 @@ export default function Header({ menuOpen, setMenuOpen }) {
     return (
         <section className="header">
             <nav className="header__nav">
-                <a href="/" className="header__logo">
+                <Link to="/" className="header__logo">
                     <img src={headerLogo} alt="NJA logo." />
-                </a>
+                </Link>
 
                 {/* Mobile nav */}
                 <button
@@ -54,19 +62,19 @@ export default function Header({ menuOpen, setMenuOpen }) {
                 {/* Desktop nav */}
                 <ul className="header__links">
                     <li className="header__link-item">
-                        <a href="/work" className="header__link">
+                        <Link to="/work" className="header__link">
                             Work
-                        </a>
+                        </Link>
                     </li>
                     <li className="header__link-item">
-                        <a href="/about" className="header__link">
+                        <Link to="/about" className="header__link">
                             About
-                        </a>
+                        </Link>
                     </li>
                     <li className="header__link-item">
-                        <a href="/contact" className="header__link">
+                        <Link to="/contact" className="header__link">
                             Contact
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
@@ -76,19 +84,19 @@ export default function Header({ menuOpen, setMenuOpen }) {
                 <nav className="header__modal-nav">
                     <ul className="header__modal-links">
                         <li className="header__modal-link-item">
-                            <a href="/work" className="header__modal-link">
+                            <Link to="/work" className="header__modal-link">
                                 Work
-                            </a>
+                            </Link>
                         </li>
                         <li className="header__modal-link-item">
-                            <a href="/about" className="header__modal-link">
+                            <Link to="/about" className="header__modal-link">
                                 About
-                            </a>
+                            </Link>
                         </li>
                         <li className="header__modal-link-item">
-                            <a href="/contact" className="header__modal-link">
+                            <Link to="/contact" className="header__modal-link">
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

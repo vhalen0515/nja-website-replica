@@ -9,7 +9,11 @@ import "./home.css";
 export default function Home() {
     return (
         <>
-            <Hero backgroundImage={homeHeroImage} arrowHref="#work-preview" isHomePage={true} />
+            <Hero
+                backgroundImage={homeHeroImage}
+                scrollTargetId="work-preview"
+                isHomePage={true}
+            />
             <WorkPreview />
             <AboutPreview />
         </>

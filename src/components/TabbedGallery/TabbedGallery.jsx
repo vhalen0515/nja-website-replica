@@ -11,7 +11,7 @@ export default function TabbedGallery() {
     //     return cat.category;
     // });
 
-    const specialCategory = "serve";
+    // const specialCategory = "serve";
 
     const categories = [
         "all",

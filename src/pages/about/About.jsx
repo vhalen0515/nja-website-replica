@@ -16,7 +16,10 @@ import "./about.css";
 export default function About() {
     return (
         <section className="about">
-            <Hero backgroundImage={aboutHeroImage} arrowHref="#about__firm-bio" />
+            <Hero
+                backgroundImage={aboutHeroImage}
+                scrollTargetId="about__firm-bio"
+            />
             <div id="about__firm-bio" className="about__firm-bio">
                 <div className="about__bio-text">
                     <h2>Firm Bio</h2>
