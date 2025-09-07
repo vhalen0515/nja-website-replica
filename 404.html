@@ -1,25 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Redirecting...</title>
-        <script type="text/javascript">
-            // Get current path
-            const path = window.location.pathname;
-
-            // Get the repo name from the homepage (adjust if different)
-            const repoName = "/nja-website-replica"; // <-- REPLACE with your repo name
-
-            // Construct new URL
-            const redirectUrl = repoName + "/index.html";
-
-            // Redirect preserving path for React Router
-            window.location.replace(
-                redirectUrl + window.location.search + window.location.hash
-            );
-        </script>
-    </head>
-    <body>
-        <p>Redirecting…</p>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Redirect all unknown routes back to /
+      window.location.replace(window.location.origin + "/");
+    </script>
+  </head>
+  <body>
+    <p>Redirecting…</p>
+  </body>
 </html>
