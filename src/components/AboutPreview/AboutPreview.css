@@ -1,0 +1,104 @@
+.about-preview {
+    max-width: 1440px;
+    padding-block-start: 5.5rem;
+    margin-inline: auto;
+}
+
+.about-preview__heading {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+    margin-block-end: 1.5rem;
+}
+
+.about-preview__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/images/about-us-hero.jpeg");
+    background-size: cover;
+    background-position: 50%;
+    margin-block-start: 9rem;
+    width: 100%;
+    height: 260px;
+}
+
+.about-preview__text-container {
+    background: var(--nja-yellow);
+    /* width: 280px; */
+    max-width: 575px;
+    text-align: center;
+    padding: 0.75rem 0.875rem;
+    margin: -21rem 1.5rem 0 1.5rem;
+    opacity: 95%;
+}
+
+.about-preview__text {
+    font-family: "Karla", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--white);
+    line-height: 20px;
+}
+
+/*--------------------------------------------------- Media Queries -------------------------------------------------------------*/
+
+@media (width >= 480px) {
+    .about-preview__heading {
+        margin-block-end: 2.01rem;
+    }
+
+    .about-preview__img-container {
+        margin-block-start: 4.875rem;
+        height: 400px;
+    }
+
+    .about-preview__text-container {
+        width: 390px;
+        margin: -22.5rem 0 0 0;
+    }
+
+    .about-preview__text {
+        line-height: 18px;
+    }
+}
+
+@media (width >= 768px) {
+    .about-preview__heading {
+        font-size: 1.5rem;
+        margin-block-end: 2rem;
+    }
+
+    .about-preview__img-container {
+        height: 500px;
+    }
+
+    .about-preview__text-container {
+        width: 575px;
+        margin: -28.125rem 0 0 0;
+    }
+
+    .about-preview__text {
+        font-size: 0.875rem;
+        line-height: 24px;
+    }
+}
+
+@media (width >= 992px) {
+    .about-preview {
+        padding-block-start: 5.5rem;
+    }
+
+    .about-preview__heading {
+        font-size: 1.875rem;
+        margin-block-end: 3.5rem;
+    }
+
+    .about-preview__img-container {
+        height: 600px;
+    }
+
+    .about-preview__text-container {
+        margin-block-start: -34.25rem;
+    }
+}

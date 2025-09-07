@@ -1,0 +1,76 @@
+.contact {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.contact__hero-image {
+    background-image: url("../../assets/images/contact-hero-image-sm.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 250px;
+}
+
+.contact__info {
+    padding: 2.5rem 0 2.5rem 1.5rem;
+}
+
+.contact__info h2 {
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: var(--nja-black);
+    text-transform: uppercase;
+    margin-block-end: 2.5rem;
+}
+
+.contact__info h3,
+p {
+    font-size: 0.8rem;
+    color: #767676;
+}
+
+.contact__info h3 {
+    margin-block-end: 0.625rem;
+}
+
+.contact__info p {
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+}
+
+.contact__address {
+    margin-block-end: 1.75rem;
+}
+
+.contact__inquiries-general {
+    margin-block-end: 1.75rem;
+}
+
+/*--------------------------------------------------- Media Queries -------------------------------------------------------------*/
+
+@media (width >= 480px) {
+    .contact__hero-image {
+        height: 420px;
+    }
+
+    .contact__info {
+        padding: 4.5rem 0 4.5rem 9.375rem;
+    }
+}
+
+@media (width >= 992px) {
+    .contact__hero-image {
+        background-image: url("../../assets/images/contact-hero-image.webp");
+        height: 70vh;
+    }
+
+    .contact__info {
+        padding: 4.5rem 0 4.5rem 9.375rem;
+    }
+
+    .contact__info h3,
+    p {
+        font-size: 0.875rem;
+        color: #767676;
+    }
+}

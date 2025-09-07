@@ -1,0 +1,109 @@
+body {
+    overflow-x: hidden;
+}
+
+.work__gallery {
+    max-width: 1440px;
+    padding: 2rem 1rem 4rem 1rem;
+    margin: 0 auto;
+}
+
+.work__tabs {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.work__tab {
+    background: none;
+    border: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: border 1s ease;
+}
+
+.work__tab.active {
+    border-bottom: 1px var(--nja-black) solid;
+}
+
+.work__gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2.8125rem 0 0 0;
+}
+
+.work__gallery-grid img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.work__img-card {
+    position: relative;
+}
+
+.work__img-title {
+    display: none;
+    position: absolute;
+    inset: auto auto 5% 5%;
+    font-family: "Karla", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.work__img-card:hover .work__img-title {
+    display: block;
+}
+
+/*--------------------------------------------------- Media Queries -----------------------------------------------------------*/
+
+@media (width >= 480px) {
+    .work__gallery {
+        padding: 4.1875rem 2.5rem 6rem 2.5rem;
+    }
+
+    .work__tabs {
+        gap: 1.5rem;
+    }
+
+    .work__gallery-grid {
+        grid-template-columns: repeat(2, minmax(192px, 1fr));
+    }
+}
+
+@media (width >= 768px) {
+    .work__gallery {
+        padding: 4.1875rem 6rem 6rem 6rem;
+    }
+
+    .work__gallery-grid {
+        /* grid-template-columns: repeat(2, minmax(250px, 1ft)); */
+        column-gap: 2.75rem;
+        row-gap: 1.5rem;
+    }
+}
+
+@media (width >= 992px) {
+    .work__gallery {
+        padding: 4.1875rem 7.125rem 9.875rem 7.125rem;
+    }
+
+    .work__gallery-grid {
+        grid-template-columns: repeat(3, minmax(192px, 1fr));
+    }
+}
+
+@media (width >= 1440px) {
+    .work__gallery {
+        padding: 4.1875rem 11.125rem 9.875rem 11.125rem;
+    }
+}
