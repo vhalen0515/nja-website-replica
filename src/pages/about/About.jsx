@@ -81,6 +81,7 @@ export default function About() {
             </div>
             <div className="about__poster">
                 <img
+                    loading="lazy"
                     src={aboutPoster}
                     alt="Picture of NJA employees together."
                 />
@@ -89,6 +90,7 @@ export default function About() {
                 <h2>Process</h2>
                 <div className="about__process-article--sustainability about__process-article">
                     <img
+                        loading="lazy"
                         src={aboutProcess}
                         alt="Picture of someone moving lumber on trailer."
                     />
@@ -113,6 +115,7 @@ export default function About() {
                 </div>
                 <div className="about__process-article--site about__process-article">
                     <img
+                        loading="lazy"
                         src={aboutProcess2}
                         alt="A photo of workers pointing to potential build sites in an open field."
                     />
@@ -132,6 +135,7 @@ export default function About() {
                 </div>
                 <div className="about__process-article--design about__process-article">
                     <img
+                        loading="lazy"
                         src={aboutProcess3}
                         alt="A photo of a pile of sketches."
                     />
@@ -160,7 +164,11 @@ export default function About() {
                 <h2>Principals</h2>
                 <div className="about__principals-article-wrapper">
                     <div className="about__principals-article--first about__principals-article">
-                        <img src={principalsJac} alt="Picture of Jac" />
+                        <img
+                            loading="lazy"
+                            src={principalsJac}
+                            alt="Picture of Jac"
+                        />
                         <h3>Jac Beury</h3>
                         <p>
                             Jac has a passion for place-making and believes in
@@ -187,6 +195,7 @@ export default function About() {
                     </div>
                     <div className="about__principals-article--second about__principals-article">
                         <img
+                            loading="lazy"
                             src={principalsNick}
                             alt="Picture of Nick Seward"
                         />
@@ -208,6 +217,7 @@ export default function About() {
                     </div>
                     <div className="about__principals-article--third about__principals-article">
                         <img
+                            loading="lazy"
                             src={principalsJohn}
                             alt="Picture of John Vierra"
                         />

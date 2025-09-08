@@ -34,6 +34,7 @@ export default function WorkPreview() {
                     <div key={image.id} className="work-preview__img-card">
                         <img
                             className="work-preview__img"
+                            loading="lazy"
                             src={image.img}
                             alt={`Picture of ${image.name}`}
                         />

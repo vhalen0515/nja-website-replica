@@ -56,7 +56,7 @@ export default function TabbedGallery() {
             <div className="work__gallery-grid">
                 {filteredImages.map((img) => (
                     <div key={img.id} className="work__img-card">
-                        <img src={img.image} alt={img.alt} />
+                        <img loading="lazy" src={img.image} alt={img.alt} />
                         <h3 className="work__img-title">{img.title}</h3>
                     </div>
                 ))}
