@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className="footer__social-container">
                     <h4 className="footer__header">social</h4>
                     <div className="footer__social-icons">
-                        <a className="footer__social-icon-link" href="#">
+                        <a className="footer__social-icon-link" href="https://www.facebook.com/profile.php?id=100063653734479">
                             <svg
                                 className="footer__social-icon"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export default function Footer() {
                                 />
                             </svg>
                         </a>
-                        <a className="footer__social-icon-link" href="#">
+                        <a className="footer__social-icon-link" href="https://www.instagram.com/njaarchitecture/">
                             <svg
                                 className="footer__social-icon"
                                 xmlns="http://www.w3.org/2000/svg"
