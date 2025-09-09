@@ -20,11 +20,11 @@ export default function WorkPreview() {
 
     useEffect(() => {
         if (windowWidth >= 992) {
-            setDisplayedImages(featuredWork)
+            setDisplayedImages(featuredWork);
         } else {
-            setDisplayedImages(featuredWork.slice(0,8))
+            setDisplayedImages(featuredWork.slice(0, 8));
         }
-    }, [windowWidth])
+    }, [windowWidth]);
 
     return (
         <section id="work-preview" className="work-preview">

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
@@ -12,12 +14,9 @@ import Contact from "./pages/contact/Contact";
 export default function App() {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    useEffect(() => {
-        window.history.scrollRestoration = "manual";
-    }, []);
-
     return (
         <Router>
+            <ScrollToTop />
             <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
             <main>
                 <Routes>
