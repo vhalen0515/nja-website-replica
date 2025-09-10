@@ -1,6 +1,14 @@
+import { useEffect } from "react";
 import "./AboutPreview.css";
 
 export default function AboutPreview() {
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://elfsightcdn.com/platform.js";
+        script.async = true;
+        document.body.appendChild(script);
+    }, []);
+
     return (
         <section className="about-preview">
             <h2 className="about-preview__heading">About Us</h2>
@@ -17,6 +25,12 @@ export default function AboutPreview() {
                         aspirations.
                     </p>
                 </div>
+            </div>
+            <div className="about-preview__instagram">
+                <div
+                    className="elfsight-app-e1838df0-a271-43ed-a689-5a96cbfd5fcb"
+                    data-elfsight-app-lazy
+                ></div>
             </div>
         </section>
     );
